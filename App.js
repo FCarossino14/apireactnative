@@ -6,8 +6,6 @@ import { Ionicons } from '@expo/vector-icons';
 
 const llamarAPI = () => {
   return fetch('http://www.omdbapi.com/?apikey=e4f4bf3e&t=school%20of%20rock')
-  /* http://www.boredapi.com/api/activity/ */
-  /* http://www.omdbapi.com/?apikey=e4f4bf3e&t=school%20of%20rock */
     .then((response) => response.json())
     .catch((error) => { console.error(error);});
 };
